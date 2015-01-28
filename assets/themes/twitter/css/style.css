@@ -185,5 +185,28 @@ pre code {
 pre ol {
   margin-left:25px;
   list-style-type:decimal;
+}
+table.imagetable {
+  font-family: verdana,arial,sans-serif;
+  font-size:11px;
+  color:#333333;
+  border-width: 1px;
+  border-color: #999999;
+  border-collapse: collapse;
+}
+table.imagetable th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #999999;
+  background-color: #b5cfd2;
+}
+table.imagetable td {
+  background-color: #dcddc0;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #999999;
+}
 
 
