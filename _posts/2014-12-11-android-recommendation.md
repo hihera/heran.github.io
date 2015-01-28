@@ -3,7 +3,7 @@ layout: post
 title: 那些实用的小软件（安卓应用推荐）
 description: 介绍一些实用而且好用的 Android 应用，本文会持续更新中。
 category: 软件推荐
-tags : [Android, 软件]
+tags : [Android, 工具]
 ---
 {% include JB/setup %}
 # 那些实用的小软件（安卓应用推荐）

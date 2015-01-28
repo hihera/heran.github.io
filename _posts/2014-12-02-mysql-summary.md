@@ -3,7 +3,7 @@ layout: post
 title: MySQL数据库常用知识总结
 description: 介绍MySQL数据库创建表、存储过程以及定时任务等相关知识。
 category: 技术分享
-tags: [database,MySQL]
+tags: [Database,MySQL]
 ---
 {% include JB/setup %}
 # MySQL数据库常用知识总结

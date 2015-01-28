@@ -3,7 +3,7 @@ layout: post
 title: 数据库设计那些事儿
 description: 主要以MySQL为例，介绍数据库设计的相关知识。
 category: 技术分享
-tags: [MySQL]
+tags: [Database,MySQL]
 ---
 {% include JB/setup %}
 #数据库设计那些事儿
@@ -13,10 +13,10 @@ tags: [MySQL]
 ####什么是数据库设计？  
 数据库设计就是根据业务系统的具体需要，结合我们所选用的DBMS（数据库管理系统），为这个业务系统构造出最优的数据存储模型。并建立好数据库中的表结构及表与表之间的关联关系的过程。使之能有效的对应用系统中的数据进行存储，并可以高校的对已经存储的数据进行访问。
    
-**关系型数据库系统：**MySQL、Oracle、SQLServer、PgSql  
-**NoSQL系统：**Mongo、Memcache、Redis  
-
 <!--break-->
+
+**关系型数据库系统：**MySQL、Oracle、SQLServer、PgSql  
+**NoSQL系统：**Mongo、Memcache、Redis   
 
 ####为什么要进行数据库设计？  
 
