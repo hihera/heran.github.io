@@ -70,7 +70,7 @@ tags: [Database,MySQL]
 以一个小型的电子商务网站为例，在这个电子商务网站的系统中包括了几个核心模块：用户模块，商品模块，订单模块，购物车模块，供应商模块。
 
 各个模块之间的关系如下图：
-![model_relationship](http://vdisk-thumb-2.wcdn.cn/frame.1024x768/download.weipan.cn/63406123/311d26b664bcbb773f9d55ec9d41cdbed7665c72?ssig=DNjDLRElQg&Expires=1422423418&KID=sae,l30zoo1wmz)
+![model_relationship](http://hihera.qiniudn.com/model_relationship.png)
 
 ####实例演示-用户模块 
 用于记录注册用户信息  
@@ -110,7 +110,7 @@ tags: [Database,MySQL]
 ### 2-1 ER图
 常见的ER图如下：
 
-![er_picture](http://vdisk-thumb-2.wcdn.cn/frame.1024x768/download.weipan.cn/63406123/78146b4a8a528a8c381ccb3971497b0768c261e3?ssig=EOuk8KRgyl&Expires=1422423418&KID=sae,l30zoo1wmz)
+![er_picture](http://hihera.qiniudn.com/er_picture.png)
 
 **ER图例说明**
 >* 矩形：表示实体集，矩形内写实体集的名字
@@ -128,17 +128,17 @@ tags: [Database,MySQL]
 ### 2-3 第一范式
 数据库表中的所有字段都是单一属性，不可再分的。这个单一属性是由基本的数据类型所构成的，如整数、浮点数、字符串等。即第一范式要求数据库中的表都是二维表。
 
-![first_nf](http://vdisk-thumb-4.wcdn.cn/frame.1024x768/download.weipan.cn/63406123/53bc57d811c32ec350401961c95a5d598da317d8?ssig=GPxHszdbw%2B&Expires=1422423418&KID=sae,l30zoo1wmz)
+![first_nf](http://hihera.qiniudn.com/first_nf.png)
 
 ### 2-4 第二范式
 数据库的表中不存在非关键字段对任一候选关键字段的部分函数依赖。部分函数依赖是指存在着组合关键字中的每一关键字决定非关键字的情况。就是所有但关键字段的表都是符合第二范式。
 
-![second_nf](http://vdisk-thumb-1.wcdn.cn/frame.1024x768/download.weipan.cn/63406123/838ad1dfac613a8ef4b22c03e5507899f03fea93?ssig=Rc0jZpZsD%2B&Expires=1422423418&KID=sae,l30zoo1wmz)
+![second_nf](http://hihera.qiniudn.com/second_nf.jpg)
 
 ###2-5 第三范式
 对任意候选关键字段的传递函数依赖则符合第三范式。
 
-![third_nf](http://vdisk-thumb-2.wcdn.cn/frame.1024x768/download.weipan.cn/63406123/4cdf0388b6513d83e6fa9748238d4bba57f0a24e?ssig=gHIG1T1IAg&Expires=1422423418&KID=sae,l30zoo1wmz)
+![third_nf](http://hihera.qiniudn.com/third_nf.png)
 
 数据库设计如果不符合范式要求，一般会出现如下问题：   
 **数据库操作异常**：插入异常、更新异常、删除异常 。   
@@ -157,7 +157,7 @@ Oracle SQLServer商用数据库，成本较高，适合企业级项目，MySQL�
 ### 3-3 MySQL存储引擎
 常见存储引擎有如下几种：
 
-![mysql_engine](http://vdisk-thumb-4.wcdn.cn/frame.1024x768/download.weipan.cn/63406123/7c9a0de57b3128401b3635528084a08da47ebf7c?ssig=V4gx0ZpkzA&Expires=1422423418&KID=sae,l30zoo1wmz)
+![mysql_engine](http://hihera.qiniudn.com/mysql_engine.png)
 
 ### 3-4 表和字段的命名规则
 > * 可读性（一般是驼峰式，但是注意mysql大小写敏感）
@@ -168,7 +168,7 @@ Oracle SQLServer商用数据库，成本较高，适合企业级项目，MySQL�
 列的数据类型一方面影响数据存储空间的开销，另一方面也会影响数据查询性能。当一个列可以选择多种数据类型时，应该优先考虑数字类型，其次是日期或二进制类型，最后是字符类型。对于相同级别的数据类型，应该优先选择占用空间小的数据类型。
 
 常用字符串大小如下图所示：
-![character_select](http://vdisk-thumb-4.wcdn.cn/frame.1024x768/download.weipan.cn/63406123/c8572cae8cadcd570f8fff4d2f80bbf565bb2475?ssig=b1HhTLqy0L&Expires=1422423418&KID=sae,l30zoo1wmz)
+![character_select](http://hihera.qiniudn.com/character_select.png)
 
 根据上面原则选择字段类型时要考虑以下两个方面：
 
@@ -245,7 +245,7 @@ Oracle SQLServer商用数据库，成本较高，适合企业级项目，MySQL�
 
 遵循标准范式化设计：
 
-![nf_design](http://vdisk-thumb-2.wcdn.cn/frame.1024x768/download.weipan.cn/63406123/052c5ff984743e210c7fc584f59ffaae936b5f16?ssig=jreZvMgYF4&Expires=1422423418&KID=sae,l30zoo1wmz)
+![nf_design](http://hihera.qiniudn.com/nf_design.png)
 
 **如何查询订单详情信息？**  
 
@@ -267,7 +267,7 @@ Oracle SQLServer商用数据库，成本较高，适合企业级项目，MySQL�
 该查询需要关联多张表，然后再通过sum汇总出价格，查询效率不太高。
 如果通过表中部分数据的冗余，进行反范式化设计，如下图：
 
-![opposite_nfdesign](http://vdisk-thumb-4.wcdn.cn/frame.1024x768/download.weipan.cn/63406123/f14985b84c14c593a85745ab9ec9463b9723c419?ssig=7YjM%2B4kSeO&Expires=1422423418&KID=sae,l30zoo1wmz)
+![opposite_nfdesign](http://hihera.qiniudn.com/opposite_nfdesign.png)
 
 
 **简化sql的查询**  
@@ -369,7 +369,7 @@ Oracle SQLServer商用数据库，成本较高，适合企业级项目，MySQL�
 ####表的垂直拆分
 随着需求越来越多，某一张表的列越来越增加，为了控制表的宽度可以进行表的垂直拆分。
 将表进行垂直拆分：
-![vertical_demoliton](http://vdisk-thumb-3.wcdn.cn/frame.1024x768/download.weipan.cn/63406123/ecc1e4f27f2207c29ddb4f2d834c6840f2524fe5?ssig=7%2Fj5rM66gw&Expires=1422423418&KID=sae,l30zoo1wmz)
+![vertical_demoliton](http://hihera.qiniudn.com/vertical_demoliton.png)
 
 **原因**：数据库以页存储，表越宽，每一行的数据越大，一页中所能存储的行数就会越来越少。拆分成多张窄表，每一张表中所含长度不会大，优化了IO效率。   
 **原则**：  
@@ -380,10 +380,10 @@ Oracle SQLServer商用数据库，成本较高，适合企业级项目，MySQL�
 原来一张大表有上亿数据，需要减少表中的数据量，为了控制表的大小可以进行表的水平拆分。
 将表进行水平拆分：
 
-![horizontal_demolition](http://vdisk-thumb-4.wcdn.cn/frame.1024x768/download.weipan.cn/63406123/c7ea560896d6a91dacfe0d4d7f0ea4b44176305e?ssig=j4s60Nr13C&Expires=1422423418&KID=sae,l30zoo1wmz)
+![horizontal_demolition](http://hihera.qiniudn.com/horizontal_demolition.jpg)
 
 那么如何把一张大表中的数据，分配到多张小表中呢？拆分可以按照Hash方式，如下图：
-![horizontal_hash_demolition](http://vdisk-thumb-1.wcdn.cn/frame.1024x768/download.weipan.cn/63406123/73fdd9aa4385e6b357048ed97ca8d21f82b53f9e?ssig=DbD%2B00FP9U&Expires=1422423418&KID=sae,l30zoo1wmz)
+![horizontal_hash_demolition](http://hihera.qiniudn.com/horizontal_hash_demolition.png)
 
 每一张表都拥有一个主键值，通过对主键值进行哈希操作，比如说主键按摩取值，把一张大表平均分配到几张小表中，解决了表中数据量的问题。
 
