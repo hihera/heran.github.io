@@ -7,7 +7,7 @@ tags: [Database,MySQL]
 ---
 {% include JB/setup %}
 #性能优化之MySQL优化(二)
-**本文继续[性能优化之MySQL优化(一)](http://sunheran.com/2015/03/12/mysql-sql-performance/)**
+##本文继续 [性能优化之MySQL优化(一)](http://sunheran.com/2015/03/12/mysql-sql-performance/)
 #第3章 索引优化
 ##3-1 如何选择合适的列建立索引
 
