@@ -5,7 +5,7 @@ permalink: /:year/:month/:day/:title
 markdown: rdiscount
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
-pygments: true
+#pygments: true
 #mardown: redcarpet
 
 safe: false
@@ -76,8 +76,8 @@ JB :
   archive_path: /archive.html
   categories_path : /categories.html
   tags_path : /tags.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
+  # atom_path : /atom.xml
+  # rss_path : /rss.xml
 
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
